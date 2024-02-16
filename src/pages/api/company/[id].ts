@@ -1,9 +1,9 @@
-import { companyService } from "@/app/services";
+import { useCompanyService } from "@/app/services";
 import type { NextApiRequest, NextApiResponse } from "next";
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
 
-    const service = companyService();
+    const service = useCompanyService();
     const id = req.query.id as string | undefined;
 
     if (id && !isNaN(parseInt(id))) {

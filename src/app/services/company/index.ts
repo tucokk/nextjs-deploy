@@ -1,6 +1,6 @@
 import { sql } from '@vercel/postgres';
 
-export function companyService() {
+export function useCompanyService() {
     const getById = async (id: number) => {
         const { rows } = await sql`SELECT * FROM company WHERE 1=1 AND id = ${id};`;
         return rows;
