@@ -124,7 +124,7 @@ export default function Test(props: TestProps) {
                     <div className="flex flex-row gap-6">
                         <div className="flex flex-col w-full max-h-60">
                             <span>Mensagem de Rodapé:</span>
-                            <Textarea value="" editor onChange={() => console.log()}></Textarea>
+                            <Textarea value="" onChange={() => console.log()}></Textarea>
                             <p className="text-sm py-1">Essa mensagem sempre será adicionada ao final dos e-mails enviados.</p>
                         </div>  
                     </div>
